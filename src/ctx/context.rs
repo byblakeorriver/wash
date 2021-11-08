@@ -57,7 +57,7 @@ impl WashContext {
         }
     }
 
-    #[ignore(clippy::too_many_arguments)]
+    #[allow(clippy::too_many_arguments)]
     pub(crate) fn new(
         name: String,
         cluster_seed: Option<String>,
@@ -119,7 +119,6 @@ impl Default for WashContext {
         }
     }
 }
-
 
 // Below are required functions for serde default derive with WashContext
 
