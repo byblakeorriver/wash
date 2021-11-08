@@ -197,7 +197,7 @@ fn test_smithy_cache_drain() {
     );
     // check that junk file is gone
     assert!(
-        path_to_test_file(&smithy_cache).exists(),
+        !path_to_test_file(&smithy_cache).exists(),
         "contents of smithy cache folder should be removed"
     );
 }
